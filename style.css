@@ -286,7 +286,7 @@ p{ margin: 2px; width: 80%; font-size: 1.5rem;}
 
 
 @media screen and (max-width: 600px) {
-	h1,h2,h3,h4,h5,h6,p{ padding: 0; width: 90%;}
+	h1,h2,h3,h4,h5,h6,p{ padding: 0;}
 	h1{ width: 88%;margin: 10px; font-size: 1.8rem;}
 	h2{ width: 86%;margin: 8px; font-size: 1.6rem;}
 	h3{ width: 84%;margin: 6px; font-size: 1.4rem;}
@@ -294,7 +294,7 @@ p{ margin: 2px; width: 80%; font-size: 1.5rem;}
 	h5{ width: 81%;margin: 3px; font-size: 1rem;}
 	h6{ width: 80%;margin: 2px; font-size: 0.8rem;}
 	p{ margin: 2px; width: 80%; font-size: 0.6rem;}
-	
+
   .b-header {
     height: 50px;
   }
