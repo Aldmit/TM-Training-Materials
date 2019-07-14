@@ -283,10 +283,9 @@ p{ margin: 2px; width: 80%; font-size: 1.5rem;}
 ::-webkit-resizer {  /* 7 - изменение размеров */}
 
 
-
 @media screen and (max-width: 600px) {
   .b-header {
-    height: 50px;
+    height: 7vh;
   }
   .b-header .i-button {
     width: 40px;
@@ -297,7 +296,7 @@ p{ margin: 2px; width: 80%; font-size: 1.5rem;}
   .b-header .b-nav {
     width: 100%;
     height: auto;
-    top: 60px;
+    top: 8vh;
     left: 0;
     right: 0;
   }
@@ -317,12 +316,12 @@ p{ margin: 2px; width: 80%; font-size: 1.5rem;}
   }
   .b-main .b-nav {
     width: 100%;
-    height: auto;
+    height: 800px;
     display: block;
   }
   .b-main .b-nav .i-nav_back, .b-main .b-nav .i-nav_next {
     width: 100%;
-    height: 7%;
+    height: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -336,17 +335,8 @@ p{ margin: 2px; width: 80%; font-size: 1.5rem;}
   }
   .b-main .b-nav .b-container {
     width: 100%;
-    height: 86%;
+    height: 700px;
     border-radius: 0;
-    font-size: 1.5rem;
-  }
-  .b-main .b-nav .b-container h1, .b-main .b-nav .b-container p {
-    margin: 10px;
-    padding: 0;
-    width: 90%;
-  }
-  .b-main .b-nav .b-container .i-question, .b-main .b-nav .b-container .i-answer {
-    font-size: 1.5rem;
   }
 
   .b-footer {
@@ -357,6 +347,3 @@ p{ margin: 2px; width: 80%; font-size: 1.5rem;}
     height: 40px;
   }
 }
-
-
-
