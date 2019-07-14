@@ -283,9 +283,11 @@ p{ margin: 2px; width: 80%; font-size: 1.5rem;}
 ::-webkit-resizer {  /* 7 - изменение размеров */}
 
 
+
+
 @media screen and (max-width: 600px) {
   .b-header {
-    height: 7vh;
+    height: 50px;
   }
   .b-header .i-button {
     width: 40px;
@@ -296,7 +298,7 @@ p{ margin: 2px; width: 80%; font-size: 1.5rem;}
   .b-header .b-nav {
     width: 100%;
     height: auto;
-    top: 8vh;
+    top: 60px;
     left: 0;
     right: 0;
   }
@@ -347,3 +349,4 @@ p{ margin: 2px; width: 80%; font-size: 1.5rem;}
     height: 40px;
   }
 }
+
