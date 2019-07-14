@@ -47,28 +47,24 @@ $(document).ready(function(){
   
 //   Работа с карточками
   
-  $('.i-question').click(function(){
-    $('.i-question').toggleClass('_show');
-    $('.i-answer').toggleClass('_show');
-  });
-   $('.i-answer').click(function(){
-    $('.i-answer').toggleClass('_show');
-    $('.i-question').toggleClass('_show');
-  });
-  
+	$('.i-question').click(function(){
+		$('.i-question').toggleClass('_show');
+		$('.i-answer').toggleClass('_show');
+	});
+	$('.i-answer').click(function(){
+		$('.i-answer').toggleClass('_show');
+		$('.i-question').toggleClass('_show');
+	});
+
 //   Работа со сладером
+	$('.b-main .i-nav_next').click(function(){
+		generateQuestion();
+		if($('.i-answer').hasClass('_show')){
+			$('.i-answer').toggleClass('_show');
+			$('.i-question').toggleClass('_show');
+		}
+		$('.i-question').html(keysObj[keyObj]);
+		$('.i-answer').html(base[keysBase[keyBase]][keysObj[keyObj]]);
+	});
 
-  $('.b-main .i-nav_next').click(function(){
-    generateQuestion();
-
-    $('.i-question').html(keysObj[keyObj]);
-    $('.i-answer').html(base[keysBase[keyBase]][keysObj[keyObj]]);
-  });
-  $('.b-main .i-nav_back').click(function(){
-    generateQuestion();
-
-    $('.i-question').html(keysObj[keyObj]);
-    $('.i-answer').html(base[keysBase[keyBase]][keysObj[keyObj]]);
-  });
-  
 });
