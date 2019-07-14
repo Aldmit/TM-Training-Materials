@@ -57,12 +57,16 @@ $(document).ready(function(){
 	});
 
 //   Работа со сладером
+
 	$('.b-main .i-nav_next').click(function(){
 		generateQuestion();
 		if($('.i-answer').hasClass('_show')){
 			$('.i-answer').toggleClass('_show');
 			$('.i-question').toggleClass('_show');
 		}
+		if($('.b-header .b-nav').hasClass('_show')) 
+		$('.b-header .b-nav').toggleClass('_show');
+		
 		$('.i-question').html(keysObj[keyObj]);
 		$('.i-answer').html(base[keysBase[keyBase]][keysObj[keyObj]]);
 	});
