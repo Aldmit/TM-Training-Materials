@@ -26,7 +26,7 @@ html, body {  margin: 0;  padding: 0;  font-family: sans-serif;}
 
 	font-style: normal;
 	font-weight: normal;
-	font-size: 1.5em;
+	font-size: 2rem;
 	line-height: 52px;
 
 	color: #ffffff;
@@ -174,12 +174,18 @@ html, body {  margin: 0;  padding: 0;  font-family: sans-serif;}
 ._mark { background-color: #ccc !important;}
 
 h1,h2,h3,h4,h5,h6,p{ padding: 0;}
-h1{ width: 88%; padding-left: 0px; margin: 10px 0; font-size: 3rem;}
-h2{ width: 86%; padding-left: 7px; margin: 8px 0; font-size: 2.5rem;}
-h3{ width: 84%; padding-left: 14px; margin: 6px 0; font-size: 2.0rem;}
-h4{ width: 84%; padding-left: 21px; margin: 4px 0; font-size: 1.8rem;}
-h5{ width: 84%; padding-left: 28px; margin: 3px 0; font-size: 1.7rem;}
-h6{ width: 84%; padding-left: 35px; margin: 2px 0; font-size: 1.6rem;}
+h1{ line-height: 50px;
+	width: 88%; padding-left: 0px; margin: 10px 0; font-size: 3rem;}
+h2{ line-height: 50px;
+	 width: 86%; padding-left: 7px; margin: 8px 0; font-size: 2.5rem;}
+h3{ line-height: 50px;
+	width: 84%; padding-left: 14px; margin: 6px 0; font-size: 2.0rem;}
+h4{ color: #FF7166;
+	width: 84%; padding-left: 21px; margin: 4px 0; font-size: 1.8rem;}
+h5{ color: rgb(102, 255, 222); 
+	width: 84%; padding-left: 28px; margin: 3px 0; font-size: 1.7rem;}
+h6{ color: rgb(192, 192, 192);
+	width: 84%; padding-left: 35px; margin: 2px 0; font-size: 1.6rem;}
 p{  width: 84%; padding-left: 42px; margin: 2px 0;font-size: 1.5rem;}
 
 ::-webkit-scrollbar {  /* 1 - скроллбар */  width: 0px;}
@@ -192,13 +198,20 @@ p{  width: 84%; padding-left: 42px; margin: 2px 0;font-size: 1.5rem;}
 
 @media screen and (max-width: 600px){
 	h1,h2,h3,h4,h5,h6,p{ padding: 0;}
-	h1{ width: 88%; margin: 10px 0 -1px; font-size: 1.7rem;}
-	h2{ width: 86%; margin: 8px 0 -1px; font-size: 1.5rem;}
-	h3{ width: 84%; margin: 6px 0 -1px; font-size: 1.3rem;}
-	h4{ width: 82%; margin: 4px 0 -4px; font-size: 1.1rem;}
-	h5{ width: 81%; margin: 2px 0 -4px; font-size: 1rem;}
-	h6{ width: 80%; margin: 0px 0 -4px; font-size: 0.9rem;}
-	p{  width: 80%; margin: -4px 0; font-size: 0.6rem;}
+	h1{ line-height: 26px;
+		width: 88%; margin: 10px 0 -1px; font-size: 1.7rem;}
+	h2{ line-height: 24px;
+		width: 86%; margin: 8px 0 -1px; font-size: 1.5rem;}
+	h3{ line-height: 22px;
+		width: 84%; margin: 6px 0 -1px; font-size: 1.3rem;}
+
+	h4{ color: #FF7166; line-height: 20px;
+		width: 82%; margin: 4px 0 0; font-size: 1.1rem;}
+	h5{ color: rgb(102, 255, 222); line-height: 18px;
+		width: 81%; margin: 2px 0 0; font-size: 1rem;}
+	h6{ color: rgb(192, 192, 192); line-height: 16px;
+		width: 80%; margin: 0px 0 0; font-size: 0.9rem;}
+	p{  width: 80%; line-height: 14px; margin: 0; font-size: 0.6rem;}
 }
 
 
