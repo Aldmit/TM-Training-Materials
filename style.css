@@ -32,49 +32,14 @@
   box-shadow: inset 0 0 0 1px #EEEEEE;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  padding: 5px;
-  margin: -2px 0;
-  display: block;
-}
-
-h1 {
-  font-size: 1.6rem;
-  padding-left: 5px;
-}
-
-h2 {
-  font-size: 1.5rem;
-  padding-left: 10px;
-}
-
-h3 {
-  font-size: 1.4rem;
-  padding-left: 15px;
-}
-
-h4 {
-  font-size: 1.3rem;
-  color: #FF746C !important;
-  padding-left: 10px;
-}
-
-h5 {
-  font-size: 1.2rem;
-  color: #906BFF !important;
-  padding-left: 15px;
-}
-
-h6 {
-  font-size: 1.1rem;
-  color: #FF9E28 !important;
-  padding-left: 25px;
-}
-
-p {
-  font-size: 1rem;
-  padding-left: 5px;
-}
+h1, h2, h3, h4, h5, h6, p {  padding: 5px;  margin: -2px 0;  display: block;}
+h1 {  font-size: 1.6rem;  padding-left: 5px;}
+h2 {  font-size: 1.5rem;  padding-left: 10px;}
+h3 {  font-size: 1.4rem;  padding-left: 15px;}
+h4 {  font-size: 1.3rem;  color: #FF746C !important;  padding-left: 10px;}
+h5 {  font-size: 1.2rem;  color: #906BFF !important;  padding-left: 15px;}
+h6 {  font-size: 1.1rem;  color: #FF9E28 !important;  padding-left: 25px;}
+p {  font-size: 1rem;  padding-left: 5px;}
 
 html, body {
   margin: 0;
