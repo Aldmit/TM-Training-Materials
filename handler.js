@@ -52,12 +52,12 @@ var btn_back = qS(".i-button-back");
 var btn_random = qS(".i-button-random");
 var btn_next = qS(".i-button-next");
 
-menu.addEventListener("click", function(){
+function clickMenu(){
   pageStart.classList.toggle("m-show-f");
   pageMenu.classList.toggle("m-show-b");
-});
+}
 
-pageMenu.addEventListener("click", function(e){
+function clickPageMenu(e){
   if (e.target.classList.contains("i-menu-text") &&
     ((e.target).parentNode).classList.contains("i-page-menu")){
       e.target.classList.toggle("m-selected");
@@ -107,7 +107,7 @@ pageMenu.addEventListener("click", function(e){
       i_buttons.classList.remove("m-show-f");
     }
   }
-});
+}
 
 function nextQuestion(){
   if(!keysObj.length){
@@ -161,9 +161,6 @@ function backQuestion(){
    i_back.innerHTML = BackO;
 }
 
-btn_next.addEventListener("click", nextQuestion);
-btn_random.addEventListener("click", randomQuestion);
-btn_back.addEventListener("click", backQuestion);
 
 function toggleFront(){
   if(i_front.classList.contains('m-show-b'))
@@ -172,8 +169,6 @@ function toggleFront(){
     i_front.classList.add('m-show-b');
 }
 
-i_front.addEventListener("click",toggleFront);
-i_back.addEventListener("click",toggleFront);
 
 function toggleTheme(){
   qS('.i-black-theme').classList.toggle('m-white-theme');
@@ -181,6 +176,18 @@ function toggleTheme(){
   i_front.classList.toggle('m-black-theme');
   i_back.classList.toggle('m-black-theme');
 }
+
+
+
+menu.addEventListener("click", clickMenu);
+
+pageMenu.addEventListener("click", clickPageMenu);
+
+btn_next.addEventListener("click", nextQuestion);
+btn_random.addEventListener("click", randomQuestion);
+btn_back.addEventListener("click", backQuestion);
+
+i_front.addEventListener("click",toggleFront);
+i_back.addEventListener("click",toggleFront);
+
 qS('.i-black-theme').addEventListener("click",toggleTheme);
-
-
