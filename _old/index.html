@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="style.css">
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<title>Learning Cards</title>
+	</head>
+	<body>
+		<div class="b-preview"><span>Learning Cards</span></div>
+		<script>$('.b-preview span').fadeOut(0); $('.b-preview span').fadeIn(800);</script>
+		<script>setTimeout(function(){$('.b-preview').fadeOut(1000);},2000);</script>
+		<section class="b-page">
+			<header class="b-header">
+				<div class="i-button">+</div>
+				<div class="i-random">R</div>
+				<nav class="b-nav">
+					<div class="b-container">
+						<div class="i-category">HTML
+							<div class="b-level _html">
+								<div class="i-level _html1">1</div>
+								<div class="i-level _html2">2</div>
+								<div class="i-level _html3">3</div>
+							</div>
+						</div>
+						<div class="i-category">CSS 
+							<div class="b-level _css">
+								<div class="i-level _css1">1</div>
+								<div class="i-level _css2">2</div>
+								<div class="i-level _css3">3</div>
+							</div>
+						</div>
+						<div class="i-category">JS
+							<div class="b-level _js">
+								<div class="i-level _js1">1</div>
+								<div class="i-level _js2">2</div>
+								<div class="i-level _js3">3</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<main class="b-main">
+				<nav class="b-nav">
+					<div class="i-nav_next">NEXT</div>
+					<div class="b-container">
+						<div class="i-question _show">
+							Сlick [+]	<br>
+							And select a skill level to train.<br><br>						
+							This white box will display<br> a question or topic.<br><br>
+							Click on this box to see<br> the response of the card.
+						</div>
+						<div class="i-answer">
+							This will show the answer to the question.<br><br>
+							To move to the next card, click next.
+						</div>
+					</div>
+				</nav>
+			</main>
+		</section>
+
+		<script src="./js/html.js"></script>
+		<script src="./js/css.js"></script>
+		<script src="./js/js.js"></script>
+
+		<script src="./handler.js"></script>
+	</body>
+</html>
