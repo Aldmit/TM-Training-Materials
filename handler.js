@@ -86,12 +86,12 @@ function clickPageMenu(e){
 			i_buttons.classList.add("m-show-f");
 			
 			generateQuestion();
-			i_front.innerHTML = FrontO;
-			i_back.innerHTML = BackO;
+			qS('.b-content-front .i-content').innerHTML = FrontO;
+			qS('.b-content-back .i-content').innerHTML = BackO;
 		} else{
 			generateQuestion();
-			i_front.innerHTML = FrontO;
-			i_back.innerHTML = BackO;
+			qS('.b-content-front .i-content').innerHTML = FrontO;
+			qS('.b-content-back .i-content').innerHTML = BackO;
 		}
 	}else{
 		if(pageContent.classList.contains("m-show-f")){
@@ -122,14 +122,14 @@ function nextQuestion(){
 		BackO = base[keysBase[keyBase]][keysObj[++keyObj]];
 		FrontO = keysObj[keyObj];
 	}
-	i_front.innerHTML = FrontO;
-	i_back.innerHTML = BackO;
+	qS('.b-content-front .i-content').innerHTML = FrontO;
+	qS('.b-content-back .i-content').innerHTML = BackO;
 }
 
 function randomQuestion(){
 	generateQuestion();
-	i_front.innerHTML = FrontO;
-	i_back.innerHTML = BackO;
+	qS('.b-content-front .i-content').innerHTML = FrontO;
+	qS('.b-content-back .i-content').innerHTML = BackO;
 }
 
 function backQuestion(){
@@ -151,8 +151,8 @@ function backQuestion(){
 		BackO = base[keysBase[keyBase]][keysObj[--keyObj]];
 		FrontO = keysObj[keyObj];
 	}
-	i_front.innerHTML = FrontO;
-	i_back.innerHTML = BackO;
+	qS('.b-content-front .i-content').innerHTML = FrontO;
+	qS('.b-content-back .i-content').innerHTML = BackO;
 }
 
 

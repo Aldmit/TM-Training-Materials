@@ -202,7 +202,8 @@ html, body {
   overflow: auto; }
   .b-content-front .i-content {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    margin: 100px 0; }
 
 .b-content-back {
   width: 98%;
@@ -216,7 +217,8 @@ html, body {
   overflow: auto; }
   .b-content-back .i-content {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    margin: 100px 0; }
 
 .i-menu:hover, .i-menu-text:hover,
 .i-button-back:hover, .i-button-random:hover, .i-button-next:hover {
