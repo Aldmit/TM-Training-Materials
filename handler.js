@@ -1,11 +1,4 @@
 
-
-$('.i-black-theme').click(function(){
-	$('.i-black-theme').toggleClass('m-white-theme');
-});
-
-console.log("I'm include");
-
 var tt1 = {"<h1>Тест стилизации текста<h1>":"\
 					<h1>Скушай ещё этих мягких французских булок да выпей чаю.</h1>\
 					<h2>Скушай ещё этих мягких французских булок да выпей чаю.</h2>\
@@ -172,13 +165,12 @@ function toggleFront(){
 
 
 function toggleTheme(){
-	// qS('.i-black-theme').classList.toggle('m-white-theme');
-	// pageStart.classList.toggle('m-black-theme');
-	// i_front.classList.toggle('m-black-theme');
-	// i_back.classList.toggle('m-black-theme');
+	qS('.i-black-theme').classList.toggle('m-white-theme');
+	pageStart.classList.toggle('m-black-theme');
+	i_front.classList.toggle('m-black-theme');
+	i_back.classList.toggle('m-black-theme');
 	$('.i-black-theme').toggleClass('m-white-theme');
 }
-
 
 
 menu.addEventListener("click", clickMenu);
@@ -192,5 +184,5 @@ btn_back.addEventListener("click", backQuestion);
 i_front.addEventListener("click",toggleFront);
 i_back.addEventListener("click",toggleFront);
 
-// qS('.i-black-theme').addEventListener("click",toggleTheme);
+qS('.i-black-theme').addEventListener("click",toggleTheme);
 
