@@ -198,6 +198,7 @@ html, body {
   top: 0;
   display: none;
   background-color: #fff;
+  box-sizing: content-box;
   overflow: auto; }
   .b-content-front .i-content {
     width: 100%;
@@ -213,6 +214,7 @@ html, body {
   top: 0;
   display: none;
   background-color: #fff;
+  box-sizing: content-box;
   overflow: auto; }
   .b-content-back .i-content {
     width: 100%;

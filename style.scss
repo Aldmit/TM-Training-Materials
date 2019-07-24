@@ -178,6 +178,7 @@ html, body{margin: 0; padding: 0; height: 100vh; color: $c4; font-family: sans-s
   position: absolute; z-index: 5; top: 0;
   display: none;
   background-color: #fff;
+	box-sizing: content-box;
   
   overflow: auto;
   .i-content{
@@ -191,7 +192,8 @@ html, body{margin: 0; padding: 0; height: 100vh; color: $c4; font-family: sans-s
 	padding-bottom: 100px;
   position: absolute; z-index: 4; top: 0;
   display: none;
-  background-color: #fff;
+	background-color: #fff;
+	box-sizing: content-box;
   
   overflow: auto;
   .i-content{
