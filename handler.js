@@ -1,7 +1,4 @@
 
-$('.i-black-theme').click(function(){$('.i-black-theme').toggleClass('m-white-theme'); console.log("1")});
-		
-
 var tt1 = {"<h1>Тест стилизации текста<h1>":"\
 					<h1>Скушай ещё этих мягких французских булок да выпей чаю.</h1>\
 					<h2>Скушай ещё этих мягких французских булок да выпей чаю.</h2>\
@@ -187,5 +184,5 @@ btn_back.addEventListener("click", backQuestion);
 i_front.addEventListener("click",toggleFront);
 i_back.addEventListener("click",toggleFront);
 
-// qS('.i-black-theme').addEventListener("click",toggleTheme);
+qS('.i-black-theme').addEventListener("click",toggleTheme);
 
