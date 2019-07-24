@@ -168,10 +168,11 @@ function ready() {
 
 
 	function toggleTheme(){
-		qS('.i-black-theme').classList.toggle('m-white-theme');
-		pageStart.classList.toggle('m-black-theme');
-		i_front.classList.toggle('m-black-theme');
-		i_back.classList.toggle('m-black-theme');
+		// qS('.i-black-theme').classList.toggle('m-white-theme');
+		// pageStart.classList.toggle('m-black-theme');
+		// i_front.classList.toggle('m-black-theme');
+		// i_back.classList.toggle('m-black-theme');
+		$('.i-black-theme').toggleClass('m-white-theme');
 	}
 
 
@@ -187,8 +188,10 @@ function ready() {
 	i_front.addEventListener("click",toggleFront);
 	i_back.addEventListener("click",toggleFront);
 
-	qS('.i-black-theme').addEventListener("click",toggleTheme);
+	// qS('.i-black-theme').addEventListener("click",toggleTheme);
 
 }
 
 document.addEventListener("DOMContentLoaded", ready);
+
+$('.i-black-theme').click(function(){toggleTheme()});
