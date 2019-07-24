@@ -77,6 +77,9 @@ html, body {
   width: 100%;
   height: 100%; }
 
+.m-menu-exit-icon {
+  background-image: url("/TM-Training-Materials/images/menu_exit.png") !important; }
+
 .b-header {
   width: 100%;
   height: 50px;

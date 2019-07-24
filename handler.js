@@ -46,6 +46,7 @@ var btn_random = qS(".i-button-random"); // 1 - кнопка рандом
 var btn_next = qS(".i-button-next"); // 1 - кнопка вперёд
 
 function clickMenu(){
+	menu.classList.toggle("m-menu-exit-icon");
 	pageStart.classList.toggle("m-show-f");
 	pageMenu.classList.toggle("m-show-b");
 }
