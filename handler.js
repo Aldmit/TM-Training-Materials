@@ -60,7 +60,7 @@ function clickPageMenu(e){
 	}
 	if (element.classList.contains("i-menu-text") &&
 		((element).parentNode).classList.contains("i-menu-content")){
-			element.classList.toggle("m-selected");
+			element.classList.toggle("m-selected-ltl");
 			if(base[element.getAttribute('data-code')] == undefined){
 				switch(element.getAttribute('data-code')){
 					case "js1": base[element.getAttribute('data-code')]= js1;break;

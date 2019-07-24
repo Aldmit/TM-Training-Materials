@@ -29,8 +29,14 @@ $font-header: sans-serif;
 }
 
 .m-selected{
-  background-color: $c0 !important;
-  color: $c5 !important;
+  background-color: $c2 !important;
+  color: $c0 !important;
+  box-shadow: inset 0 0 0 1px $c1;
+}
+
+.m-selected-ltl{
+  background-color: $c5 !important;
+  color: $c4 !important;
   box-shadow: inset 0 0 0 1px $c1;
 }
 
@@ -120,7 +126,8 @@ html, body{margin: 0; padding: 0; height: 100vh; color: $c4; font-family: sans-s
   position: relative; z-index: 9;
   display: none;
   overflow: auto;
-  background-color: $c1;
+	background-color: $c1;
+	font-size: 1.3rem;
   .i-page-menu{
     width: 100%; height: 100px;
     
@@ -205,13 +212,20 @@ html, body{margin: 0; padding: 0; height: 100vh; color: $c4; font-family: sans-s
 		box-sizing: border-box;
   }
 }
-.i-menu:hover,.i-menu-text:hover, 
-.i-button-back:hover,.i-button-random:hover,.i-button-next:hover{
-  background-color: $c2 !important;
-  color: $c0 !important;
-  box-shadow: inset 0 0 0 0px $c1;
+@media screen and (min-width: 768px){
+	.i-menu:hover,.i-menu-text:hover, 
+	.i-button-back:hover,.i-button-random:hover,.i-button-next:hover{
+		background-color: $c2 !important;
+		color: $c0 !important;
+		box-shadow: inset 0 0 0 0px $c1;
+	}
 }
 
+.i-menu:active,.i-menu-text:active, 
+.i-button-back:active,.i-button-random:active,.i-button-next:active{
+	background-color: $c3 !important;
+	box-shadow: inset 0 0 0 0px $c1;
+}
 .m-black-theme{
   background-color: #000000 !important;
 	color: $c0 !important;
