@@ -154,16 +154,20 @@ function backQuestion(){
 	}
 	qS('.b-content-front .i-content').innerHTML = FrontO;
 	qS('.b-content-back .i-content').innerHTML = BackO;
+
 }
 
+function buttonFront(){toggleFront(0,"X")}
 
-function toggleFront(){
-	if(i_front.classList.contains('m-show-b'))
+function toggleFront(e,trigger = null){
+	console.log(trigger);
+	if(!i_front.classList.contains('m-show-b') && trigger != null)
+		i_front.classList.add('m-show-b');
+	else if(i_front.classList.contains('m-show-b') && trigger == null)
 		i_front.classList.remove('m-show-b');
 	else
 		i_front.classList.add('m-show-b');
 }
-
 
 function toggleTheme(){
 	qS('.i-black-theme').classList.toggle('m-white-theme');
@@ -184,6 +188,10 @@ btn_back.addEventListener("click", backQuestion);
 
 i_front.addEventListener("click",toggleFront);
 i_back.addEventListener("click",toggleFront);
+
+btn_next.addEventListener("click", buttonFront);
+btn_random.addEventListener("click", buttonFront);
+btn_back.addEventListener("click", buttonFront)
 
 qS('.i-black-theme').addEventListener("click",toggleTheme);
 
