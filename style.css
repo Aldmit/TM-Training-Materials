@@ -84,11 +84,12 @@ html, body {
     width: 50px;
     height: 50px;
     margin-right: 3%;
-    background-color: #888888;
-    background-image: url("");
-    background-position: 0 0;
+    background-color: #FF746C;
+    background-image: url("aldmit.github.io/TM-Training-Materials/images/menu_button.png");
+    background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-size: contain; }
+    background-size: contain;
+    cursor: pointer; }
   .b-header .i-text-header {
     width: 100%;
     height: 50px;
@@ -165,7 +166,8 @@ html, body {
         height: 60px;
         margin-bottom: 20px;
         box-shadow: inset 0 0 0 1px #EEEEEE;
-        background: #FFFFFF; }
+        background: #FFFFFF;
+        cursor: pointer; }
 
 .b-page-content {
   width: 100%;
@@ -189,7 +191,8 @@ html, body {
     .b-page-content .b-buttons .i-button-back, .b-page-content .b-buttons .i-button-random, .b-page-content .b-buttons .i-button-next {
       margin: 0 1px;
       flex-wrap: no-wrap;
-      background-color: #EEEEEE; }
+      background-color: #EEEEEE;
+      cursor: pointer; }
 
 .b-content-front {
   width: 98%;
@@ -229,7 +232,6 @@ html, body {
 .i-button-back:hover, .i-button-random:hover, .i-button-next:hover {
   background-color: #BBBBBB !important;
   color: #FFFFFF !important;
-  cursor: pointer !important;
   box-shadow: inset 0 0 0 0px #EEEEEE; }
 
 .m-black-theme {
