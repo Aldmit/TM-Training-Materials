@@ -156,7 +156,9 @@ html, body{margin: 0; padding: 0; height: 100vh; color: $c4; font-family: sans-s
   width: 100%; height: 100%;
   position: absolute; z-index: 2; top: 0;
   background-color: #fff;
-  display: none;
+	display: none;
+	justify-content: center;
+	align-items: center;
   .b-buttons{
     width: 100%; height: 50px;
     margin: 0 auto;
@@ -172,13 +174,12 @@ html, body{margin: 0; padding: 0; height: 100vh; color: $c4; font-family: sans-s
 }
 
 .b-content-front{
-  width: 98%; height: 98%;
+  width: 98%; height: 90%;
 	padding: 1%;
 	padding-bottom: 100px;
   position: absolute; z-index: 5; top: 0;
   display: none;
   background-color: #fff;
-	box-sizing: content-box;
   
   overflow: auto;
   .i-content{
@@ -187,13 +188,12 @@ html, body{margin: 0; padding: 0; height: 100vh; color: $c4; font-family: sans-s
   }
 }
 .b-content-back{
-  width: 98%; height: 98%;
+  width: 98%; height: 90%;
 	padding: 1%;
 	padding-bottom: 100px;
   position: absolute; z-index: 4; top: 0;
   display: none;
 	background-color: #fff;
-	box-sizing: content-box;
   
   overflow: auto;
   .i-content{
@@ -222,7 +222,7 @@ html, body{margin: 0; padding: 0; height: 100vh; color: $c4; font-family: sans-s
 
 .b-preview{
   width: 100%;  height: 100%;
-  position: absolute; left: 0; top: 0; right: 0; bottom: 0;
+  position: absolute; left: 0; top: 0; right: 0;
 	z-index: 11;
 	
 	display: flex;
