@@ -85,7 +85,7 @@ html, body {
     height: 50px;
     margin-right: 3%;
     background-color: #FF746C;
-    background-image: url("TM-Training-Materials/images/menu_button.png");
+    background-image: url("/TM-Training-Materials/images/menu_button.png");
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: contain;
