@@ -194,7 +194,6 @@ html, body {
   width: 98%;
   height: 90%;
   padding: 1%;
-  padding-bottom: 100px;
   position: absolute;
   z-index: 5;
   top: 0;
@@ -209,7 +208,6 @@ html, body {
   width: 98%;
   height: 90%;
   padding: 1%;
-  padding-bottom: 100px;
   position: absolute;
   z-index: 4;
   top: 0;
