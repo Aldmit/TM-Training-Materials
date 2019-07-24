@@ -173,7 +173,8 @@ html, body{margin: 0; padding: 0; height: 100vh; color: $c4; font-family: sans-s
 
 .b-content-front{
   width: 98%; height: 98%;
-  padding: 1%;
+	padding: 1%;
+	padding-bottom: 100px;
   position: absolute; z-index: 5; top: 0;
   display: none;
   background-color: #fff;
@@ -187,6 +188,7 @@ html, body{margin: 0; padding: 0; height: 100vh; color: $c4; font-family: sans-s
 .b-content-back{
   width: 98%; height: 98%;
   padding: 1%;
+	padding-bottom: 100px;
   position: absolute; z-index: 4; top: 0;
   display: none;
   background-color: #fff;
