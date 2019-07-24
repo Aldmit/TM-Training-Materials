@@ -187,5 +187,5 @@ btn_back.addEventListener("click", backQuestion);
 i_front.addEventListener("click",toggleFront);
 i_back.addEventListener("click",toggleFront);
 
-qS('.i-black-theme').addEventListener("click",toggleTheme);
+// qS('.i-black-theme').addEventListener("click",toggleTheme);
 
