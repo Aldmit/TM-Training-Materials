@@ -204,7 +204,7 @@ html, body {
   .b-content-front .i-content {
     width: 100%;
     height: 100%;
-    padding: 20px 0 100px;
+    padding: 10px 0 120px;
     overflow-y: auto;
     box-sizing: border-box; }
 
@@ -221,7 +221,7 @@ html, body {
   .b-content-back .i-content {
     width: 100%;
     height: 100%;
-    padding: 20px 0 100px;
+    padding: 10px 0 120px;
     overflow-y: auto;
     box-sizing: border-box; }
 
