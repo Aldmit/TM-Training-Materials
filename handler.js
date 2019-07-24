@@ -1,6 +1,7 @@
 
-
+console.log("I'm include");
 function ready() {
+
 	var tt1 = {"<h1>Тест стилизации текста<h1>":"\
 						<h1>Скушай ещё этих мягких французских булок да выпей чаю.</h1>\
 						<h2>Скушай ещё этих мягких французских булок да выпей чаю.</h2>\
@@ -11,13 +12,7 @@ function ready() {
 						<p> Скушай ещё этих мягких французских булок да выпей чаю.</p>\
 						"};
 
-	var keysBase = "";
-	var keyBase = "";
-	var keysObj = "";
-	var keyObj = "";
-	var FrontO = "";
-	var BackO = "";
-
+	var keysBase = "", keyBase = "", keysObj = "", keyObj = "", FrontO = "", BackO = "";
 	var base = {};
 
 	function generateQuestion(){
@@ -39,20 +34,19 @@ function ready() {
 	}
 
 	//   Работа с меню
-	var menu = qS(".i-menu");
-	var pageStart = qS(".b-page-start");
-	var pageMenu = qS(".b-page-menu");
-	var menuContent = qS(".b-menu-content");
-	var b_menu = 0; var i_menu = 0;
-	var pageContent = qS(".b-page-content");
-	var i_front = qS(".b-content-front");
-	var i_back = qS(".b-content-back");
+	var menu = qS(".i-menu"); // 1 - иконка меню
+	var pageStart = qS(".b-page-start"); // 1 - стартовая страница
+	var pageMenu = qS(".b-page-menu"); // 1 - страница меню
+	var menuContent = qS(".b-menu-content"); // M - блоки меню
+	var pageContent = qS(".b-page-content"); // 1 - страница контента
+	var i_front = qS(".b-content-front"); // 1 - страница фронт-контента
+	var i_back = qS(".b-content-back"); // 1 - страница бек-контента
 
-	var i_buttons = qS(".b-page-content .b-buttons");
+	var i_buttons = qS(".b-page-content .b-buttons"); // 1 - блок с кнопками
 
-	var btn_back = qS(".i-button-back");
-	var btn_random = qS(".i-button-random");
-	var btn_next = qS(".i-button-next");
+	var btn_back = qS(".i-button-back"); // 1 - кнопка назад
+	var btn_random = qS(".i-button-random"); // 1 - кнопка рандом
+	var btn_next = qS(".i-button-next"); // 1 - кнопка вперёд
 
 	function clickMenu(){
 		pageStart.classList.toggle("m-show-f");
@@ -60,30 +54,31 @@ function ready() {
 	}
 
 	function clickPageMenu(e){
-		if (e.target.classList.contains("i-menu-text") &&
-			((e.target).parentNode).classList.contains("i-page-menu")){
-				e.target.classList.toggle("m-selected");
-				menuContent = ((e.target).parentNode).nextElementSibling;
+		var element = e.target;
+		if (element.classList.contains("i-menu-text") &&
+			((element).parentNode).classList.contains("i-page-menu")){
+				element.classList.toggle("m-selected");
+				menuContent = ((element).parentNode).nextElementSibling;
 				menuContent.classList.toggle("m-show-b");
 		}
-		if (e.target.classList.contains("i-menu-text") &&
-			((e.target).parentNode).classList.contains("i-menu-content")){
-				e.target.classList.toggle("m-selected");
-				if(base[e.target.getAttribute('data-code')] == undefined){
-					switch(e.target.getAttribute('data-code')){
-						case "js1": base[e.target.getAttribute('data-code')]= js1;break;
-						case "js2": base[e.target.getAttribute('data-code')]= js2;break;
-						case "js3": base[e.target.getAttribute('data-code')]= js3;break;
+		if (element.classList.contains("i-menu-text") &&
+			((element).parentNode).classList.contains("i-menu-content")){
+				element.classList.toggle("m-selected");
+				if(base[element.getAttribute('data-code')] == undefined){
+					switch(element.getAttribute('data-code')){
+						case "js1": base[element.getAttribute('data-code')]= js1;break;
+						case "js2": base[element.getAttribute('data-code')]= js2;break;
+						case "js3": base[element.getAttribute('data-code')]= js3;break;
 							
-						case "css1": base[e.target.getAttribute('data-code')]= css1;break;
-						case "css2": base[e.target.getAttribute('data-code')]= css2;break;
-						case "css3": base[e.target.getAttribute('data-code')]= css3;break;
+						case "css1": base[element.getAttribute('data-code')]= css1;break;
+						case "css2": base[element.getAttribute('data-code')]= css2;break;
+						case "css3": base[element.getAttribute('data-code')]= css3;break;
 						
-						case "tt1": base[e.target.getAttribute('data-code')]= tt1;break;
+						case "tt1": base[element.getAttribute('data-code')]= tt1;break;
 					}
 				}
 				else
-					delete base[e.target.getAttribute('data-code')];
+					delete base[element.getAttribute('data-code')];
 			console.log(base)
 		}
 		if(Object.keys(base).length != 0){
