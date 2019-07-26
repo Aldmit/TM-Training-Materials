@@ -71,6 +71,10 @@ function clickPageMenu(e){
 					case "css1": base[element.getAttribute('data-code')]= css1;break;
 					case "css2": base[element.getAttribute('data-code')]= css2;break;
 					case "css3": base[element.getAttribute('data-code')]= css3;break;
+
+					case "eng1": base[element.getAttribute('data-code')]= eng1;break;
+					case "eng2": base[element.getAttribute('data-code')]= eng2;break;
+					case "eng3": base[element.getAttribute('data-code')]= eng3;break;
 					
 					case "tt1": base[element.getAttribute('data-code')]= tt1;break;
 				}
