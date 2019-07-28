@@ -181,7 +181,6 @@ function toggleTheme(){
 	pageStart.classList.toggle('m-black-theme');
 	i_front.classList.toggle('m-black-theme');
 	i_back.classList.toggle('m-black-theme');
-	$('.i-black-theme').toggleClass('m-white-theme');
 }
 
 
