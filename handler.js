@@ -75,6 +75,9 @@ function clickPageMenu(e){
 					case "eng1": base[element.getAttribute('data-code')]= eng1;break;
 					case "eng2": base[element.getAttribute('data-code')]= eng2;break;
 					case "eng3": base[element.getAttribute('data-code')]= eng3;break;
+
+					case "poe1": base[element.getAttribute('data-code')]= poe1;break;
+					case "poe2": base[element.getAttribute('data-code')]= poe2;break;
 					
 					case "tt1": base[element.getAttribute('data-code')]= tt1;break;
 				}
