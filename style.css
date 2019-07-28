@@ -156,7 +156,10 @@ html, body {
     width: 100%;
     height: 100px;
     box-shadow: inset 0 0 0 1px #EEEEEE;
-    background: #FFFFFF; }
+		background: #FFFFFF; }
+	.b-page-menu .i-page-menu{
+		cursor: pointer; }
+	}
   .b-page-menu .b-menu-content {
     width: 100%;
     height: 300px;
