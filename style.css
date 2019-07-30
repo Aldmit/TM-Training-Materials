@@ -26,8 +26,7 @@
 
 .m-selected-ltl {
   background-color: #FF746C !important;
-  color: #000000 !important;
-  box-shadow: inset 0 0 0 1px #EEEEEE; }
+  color: #FFFFFF !important; }
 
 h1, h2, h3, h4, h5, h6, p, pre {
   padding: 5px;
@@ -173,6 +172,19 @@ html, body {
         box-shadow: inset 0 0 0 1px #EEEEEE;
         background: #FFFFFF;
         cursor: pointer; }
+  .b-page-menu .i-select-menu {
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    border: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background-color: #BBBBBB;
+    font-size: 1.7rem;
+    color: #FFFFFF; }
 
 .b-page-content {
   width: 100%;

@@ -49,10 +49,13 @@ function clickMenu(){
 	menu.classList.toggle("m-menu-exit-icon");
 	pageStart.classList.toggle("m-show-f");
 	pageMenu.classList.toggle("m-show-b");
+	
+	qS('.i-select-menu').classList.remove("m-selected-ltl");
 }
 
 function clickPageMenu(e){
 	var element = e.target;
+
 	if (element.classList.contains("i-menu-text") &&
 		((element).parentNode).classList.contains("i-page-menu")){
 			element.classList.toggle("m-selected");
@@ -80,6 +83,10 @@ function clickPageMenu(e){
 					case "poe2": base[element.getAttribute('data-code')]= poe2;break;
 					
 					case "tt1": base[element.getAttribute('data-code')]= tt1;break;
+				}
+				
+				if(!qS('.i-select-menu').classList.contains("i-page-menu")){
+					qS('.i-select-menu').classList.add("m-selected-ltl");
 				}
 			}
 			else
@@ -185,6 +192,7 @@ function toggleTheme(){
 
 
 menu.addEventListener("click", clickMenu);
+qS('.i-select-menu').addEventListener("click", clickMenu);
 
 pageMenu.addEventListener("click", clickPageMenu);
 
