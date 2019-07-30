@@ -69,7 +69,7 @@ html, body{margin: 0; padding: 0; height: 100vh; color: $c4; font-family: sans-s
     position: fixed; z-index: 10;
 		left: 20px; bottom: 70px;
 		
-		opacity: 0.3;
+		opacity: 0.5;
     
     margin-right: 3%;
     background-color: $c5;
@@ -98,7 +98,7 @@ html, body{margin: 0; padding: 0; height: 100vh; color: $c4; font-family: sans-s
 		color: white;
 		cursor: pointer;
 
-		opacity: 0.3;
+		opacity: 0.5;
 		&:focus, &:hover{
 			opacity: 1;
 		}
@@ -118,9 +118,8 @@ html, body{margin: 0; padding: 0; height: 100vh; color: $c4; font-family: sans-s
   height: 100%;
   position: relative; z-index: 1;  top: 0;
   display: none;
-  align-items: center;
   .i-content{
-    
+   padding-top: 50px;
   }
 }
 

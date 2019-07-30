@@ -90,7 +90,7 @@ html, body {
   z-index: 10;
   left: 20px;
   bottom: 70px;
-  opacity: 0.3;
+  opacity: 0.5;
   margin-right: 3%;
   background-color: #FF746C;
   background-image: url("/TM-Training-Materials/images/menu_button.png");
@@ -115,7 +115,7 @@ html, body {
   background-color: #000;
   color: white;
   cursor: pointer;
-  opacity: 0.3; }
+  opacity: 0.5; }
   .b-header .i-black-theme:focus, .b-header .i-black-theme:hover {
     opacity: 1; }
 
@@ -135,8 +135,9 @@ html, body {
   position: relative;
   z-index: 1;
   top: 0;
-  display: none;
-  align-items: center; }
+  display: none; }
+  .b-page-start .i-content {
+    padding-top: 50px; }
 
 .b-page-menu {
   width: 100%;
