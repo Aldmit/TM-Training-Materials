@@ -59,12 +59,17 @@ html, body{margin: 0; padding: 0; height: 100vh; color: $c4; font-family: sans-s
 	background-image: url("/TM-Training-Materials/images/menu_exit.png") !important;
 }
 .b-header{
-  width: 100%; height: 50px;
-  position: fixed; top: 0; z-index: 10;
-  background-color: $c5;
-  display: flex;
   .i-menu{
-    width: 50px; height: 50px;
+		width: 50px; height: 50px;
+		
+		width: 50px; height: 50px;
+    
+    border-radius: 100px;
+    
+    position: fixed; z-index: 10;
+		left: 20px; bottom: 70px;
+		
+		opacity: 0.3;
     
     margin-right: 3%;
     background-color: $c5;
@@ -73,19 +78,9 @@ html, body{margin: 0; padding: 0; height: 100vh; color: $c4; font-family: sans-s
     background-repeat: no-repeat;
     background-size: contain;
 		cursor: pointer;
-  }
-  .i-text-header{
-    width: 100%; height: 50px;
-    
-    font-family: $font-header;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 23px;
-    display: flex;
-    align-items: center;
-    
-    color: $c0;
+		&:focus, &:hover{
+			opacity: 1;
+		}
   }
   .i-black-theme{
     width: 50px; height: 50px;
@@ -100,13 +95,18 @@ html, body{margin: 0; padding: 0; height: 100vh; color: $c4; font-family: sans-s
     align-items: center;
     
     background-color: #000;
-    color: white;
+		color: white;
+		cursor: pointer;
+
+		opacity: 0.3;
+		&:focus, &:hover{
+			opacity: 1;
+		}
   }
 }
 
 .b-main{
   width: 100%;  height: 100%;
-  padding-top: 50px;
   box-sizing: border-box;
   .k-wrap{
     width: 100%; height: 100%;
@@ -148,13 +148,11 @@ html, body{margin: 0; padding: 0; height: 100vh; color: $c4; font-family: sans-s
     .i-menu-content{
       width: 100%; height: 100%;
       padding: 20px 20px 0 20px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      display: block;
       box-sizing: border-box;
       .i-menu-text{
-        width: 87.5%; height: 60px;
-        margin-bottom: 20px;
+        width: 87.5%; height: 80px;
+        margin: 0 auto 3px;
         box-shadow: inset 0 0 0 1px $c1;
         background: $c0;
 				cursor: pointer;
