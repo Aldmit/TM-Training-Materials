@@ -75,6 +75,8 @@ function clickPageMenu(e){
 					case "css2": base[element.getAttribute('data-code')]= css2;break;
 					case "css3": base[element.getAttribute('data-code')]= css3;break;
 
+					case "php1": base[element.getAttribute('data-code')]= php1;break;
+
 					case "eng1": base[element.getAttribute('data-code')]= eng1;break;
 					case "eng2": base[element.getAttribute('data-code')]= eng2;break;
 					case "eng3": base[element.getAttribute('data-code')]= eng3;break;
@@ -175,12 +177,21 @@ function buttonFront(){toggleFront(0,"X")}
 
 function toggleFront(e,trigger = null){
 	console.log(trigger);
-	if(!i_front.classList.contains('m-show-b') && trigger != null)
+	if(!i_front.classList.contains('m-show-b') && trigger != null){
 		i_front.classList.add('m-show-b');
-	else if(i_front.classList.contains('m-show-b') && trigger == null)
+		menu.classList.remove('m-hide');
+		qS('.i-black-theme').classList.remove('m-hide');
+	}
+	else if(i_front.classList.contains('m-show-b') && trigger == null){
 		i_front.classList.remove('m-show-b');
-	else
+		menu.classList.add('m-hide');
+		qS('.i-black-theme').classList.add('m-hide');
+	}
+	else{
 		i_front.classList.add('m-show-b');
+		menu.classList.remove('m-hide');
+		qS('.i-black-theme').classList.remove('m-hide');
+	}
 }
 
 function toggleTheme(){
