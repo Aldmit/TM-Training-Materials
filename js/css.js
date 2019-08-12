@@ -19,7 +19,7 @@ var css1 = {"\
 	</p>",
 	
 	"\
-	<h1>Рамка:</h1>\
+	<h1>Рамка</h1>\
 	":"\
 	<h4>border: [border-width || border-style || border-color] | inherit</h4>\
 	<h5>border-width</h5>\

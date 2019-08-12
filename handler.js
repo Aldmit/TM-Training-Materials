@@ -67,18 +67,17 @@ function clickPageMenu(e){
 			element.classList.toggle("m-selected-ltl");
 			if(base[element.getAttribute('data-code')] == undefined){
 				switch(element.getAttribute('data-code')){
-					case "js1": base[element.getAttribute('data-code')]= js1;break;
-					case "js2": base[element.getAttribute('data-code')]= js2;break;
-					case "js3": base[element.getAttribute('data-code')]= js3;break;
-						
+
+					case "html1": base[element.getAttribute('data-code')]= html1;break;
+					case "html2": base[element.getAttribute('data-code')]= html2;break;
+
 					case "css1": base[element.getAttribute('data-code')]= css1;break;
-					case "css2": base[element.getAttribute('data-code')]= css2;break;
-					case "css3": base[element.getAttribute('data-code')]= css3;break;
+
+					case "js2": base[element.getAttribute('data-code')]= js2;break;
 
 					case "php1": base[element.getAttribute('data-code')]= php1;break;
 
 					case "eng1": base[element.getAttribute('data-code')]= eng1;break;
-					case "eng2": base[element.getAttribute('data-code')]= eng2;break;
 					case "eng3": base[element.getAttribute('data-code')]= eng3;break;
 
 					case "poe1": base[element.getAttribute('data-code')]= poe1;break;
