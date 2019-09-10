@@ -31,6 +31,8 @@ function qS(selector, elem=undefined){
 }
 
 //   Работа с меню
+// Какой-то комментарий
+
 var menu = qS(".i-menu"); // 1 - иконка меню
 var pageStart = qS(".b-page-start"); // 1 - стартовая страница
 var pageMenu = qS(".b-page-menu"); // 1 - страница меню
